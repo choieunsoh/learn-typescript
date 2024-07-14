@@ -49,7 +49,7 @@ const configs = antfu(
     // Other flat config
     name: 'kiattipong/eslint-config',
     rules: {
-      'no-console': 'warn',
+      'no-console': 'off',
 
       'style/semi': 'off',
       'style/brace-style': ['error', '1tbs'],
