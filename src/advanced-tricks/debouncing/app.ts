@@ -1,4 +1,4 @@
-function debounce(func: (...args: any[]) => void, wait: number) {
+function throttle(func: (...args: any[]) => void, wait: number) {
   let timeoutId: ReturnType<typeof setTimeout> | null = null;
   return function (this: any, ...args: any[]) {
     if (timeoutId) {
@@ -19,7 +19,7 @@ function delay(wait: number) {
   });
 }
 
-const search = debounce((query) => {
+const search = throttle((query) => {
   console.log(`Searching for ${query}`);
   // Imagine an API call here
 }, 300);
