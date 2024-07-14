@@ -1,5 +1,5 @@
 {
-  "name": "my-ts-template",
+  "name": "learn-typescript",
   "version": "1.0.0",
   "description": "",
   "author": "",
@@ -10,6 +10,7 @@
     "clean": "rm -rf node_modules dist coverage",
     "build": "rm -rf dist && tsc -p tsconfig.prod.json",
     "dev": "nodemon src/index.ts",
+    "dev:bun": "bun --hot run src/index.ts",
     "start": "bun src/index.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
