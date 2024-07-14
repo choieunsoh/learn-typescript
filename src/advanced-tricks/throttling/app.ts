@@ -1,4 +1,4 @@
-function throttle(func: (...args: any[]) => void, interval: number) {
+export function throttle(func: (...args: any[]) => void, interval: number) {
   let lastCall = 0;
   return function (this: any, ...args: any[]) {
     const now = Date.now();
