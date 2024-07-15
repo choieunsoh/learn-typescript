@@ -1,4 +1,3 @@
-/* eslint-disable security/detect-object-injection */
 type User = {
   name: string;
   age: number;
